@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>Time Sheet</title>
+  </head>
+  <body>
+<div style="border: 1px solid black; padding: 1em;">
+  <h1>Timesheet</h1>
+  <div class="m-coursecontent-table-outer"><table>
+    <thead>
+      <tr>
+        <th>Week of</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Total</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <form action= "/submit" method = "post" >
+        <input placeholder="mm/dd/yyyy" value="date" name="date" type="date" required>
+          
+          <input value="0" name="mondayHours" type="number" min= "0">
+          <input value="0" name="tuesdayHours" type="number" min= "0">
+          <input value="0" name="wednesdayHours" type="number" min= "0">
+          <input value="0" name="thursdayHours" type="number" min= "0">
+          <input value="0" name="fridayHours" type="number" min= "0">
+          <input value="0" name="sum" type="number" min= "0">
+        <button name="action" value="update">Update</button>
+         <button name="action" value="submit">Submit</button>
+        </form>
+      </tr>
+    </tbody>
+    
+  </table></div>
+  <div class="m-coursecontent-table-outer"><table>
+    <thead>
+      <tr>
+        <th>Week of</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+  </table></div>
+</div>
+</body>
+</html>
